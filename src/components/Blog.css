@@ -1,0 +1,16 @@
+.blog {
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.blog h2 {
+  margin-bottom: 20px;
+}
+
+.blog-post {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}

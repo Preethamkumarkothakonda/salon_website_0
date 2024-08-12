@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-image: url("https://img.freepik.com/free-photo/abstract-digital-grid-black-background_53876-97647.jpg?size=626&ext=jpg&ga=GA1.1.1412446893.1704758400&semt=ais");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+.fk {
+  color: crimson;
+}
+header h1 {
+  margin: 0;
+  color: chocolate;
+  font-family: "Montserrat", sans-serif;
+}
+.sk {
+  color: orangered;
+  font-family: "Slabo 45px", serif;
+  text-align: center;
+  font-size: 20px;
+}
+.tagline {
+  font-family: "Lora", serif;
+  color: darkorange;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 10px 0;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: darkorange;
+}
+
+section {
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  margin: 10px;
+}
+
+.jk {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.jk:hover {
+  transform: scale(1.05);
+}
+
+.service-item,
+.stylist,
+.review,
+.membership-tier,
+.blog-post {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  margin: 10px;
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label,
+form input,
+form select,
+form textarea,
+form button {
+  width: 80%;
+  margin: 10px 0;
+}
+
+form input,
+form select,
+form textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid darkorange;
+}
+
+form button {
+  padding: 10px 20px;
+  background: darkorange;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+form button:hover {
+  background: orangered;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .row,
+  .image-grid {
+    flex-direction: column;
+  }
+}
+
+/* Animation Styles */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Falling Images Styles */
+.falling-image {
+  position: absolute;
+  top: -100px;
+  width: 50px;
+  height: 50px;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: fall linear;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+  }
+}

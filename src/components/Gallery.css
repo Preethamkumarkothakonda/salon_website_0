@@ -1,0 +1,27 @@
+.gallery {
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.gallery h2 {
+  margin-bottom: 20px;
+}
+
+.image-grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.image-grid img {
+  margin: 10px;
+  border-radius: 10px;
+  width: 200px;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
